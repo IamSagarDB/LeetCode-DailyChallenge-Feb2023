@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e265bfa-9f00-4545-88be-3ad8a229512a" name="Changes" comment="P_953_Verifying_an_Alien_Dictionary">
-      <change afterPath="$PROJECT_DIR$/src/P_6_Zigzag_Conversion.java" afterDir="false" />
+    <list default="true" id="0e265bfa-9f00-4545-88be-3ad8a229512a" name="Changes" comment="P_6_Zigzag_Conversion">
+      <change afterPath="$PROJECT_DIR$/src/P_567_Permutation_in_String.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2L87mVgVcwSYzy7nNUA7JGDnS9L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,7 +43,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.P_6_Zigzag_Conversion">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LeetCode-DailyChallenge-Feb2023" />
@@ -64,8 +67,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.P_6_Zigzag_Conversion" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.P_6_Zigzag_Conversion" />
         <item itemvalue="Application.P_953_Verifying_an_Alien_Dictionary" />
       </list>
     </recent_temporary>
@@ -121,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675345127907</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="P_6_Zigzag_Conversion">
+      <created>1675439441776</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675439441776</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +148,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="P_1071_Greatest_Common_Divisor_of_Strings" />
     <MESSAGE value="P_953_Verifying_an_Alien_Dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="P_953_Verifying_an_Alien_Dictionary" />
+    <MESSAGE value="P_6_Zigzag_Conversion" />
+    <option name="LAST_COMMIT_MESSAGE" value="P_6_Zigzag_Conversion" />
   </component>
 </project>
