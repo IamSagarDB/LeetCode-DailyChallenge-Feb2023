@@ -1,60 +1,74 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String s1 = "ab";
-        String s2 = "eidbaooo";
-        boolean res = checkInclusion(s1, s2);
-        System.out.println(res);
+        String s = "cbaebabacd";
+        String p = "abc";
+        List<Integer> res = findAnagrams(s, p);
+        for (Integer n : res){
+            System.out.print(n + " ");
+        }
     }
 
-    public static boolean checkInclusion(String s1, String s2) {
-        int s1L = s1.length();
-        int s2L = s2.length();
-        if (s1L > s2L) return false;
+    public static List<Integer> findAnagrams(String s, String p) {
+        List<Integer> res = new ArrayList<Integer>();
+        int[] sHash = new int[26];
+        int[] pHash = new int[26];
+        int sLen = s.length();
+        int pLen = p.length();
 
-        int[] s1Hash = new int[26];
-        int[] s2Hash = new int[26];
+        if (pLen > sLen) return res;
 
-        // pre prodcess the sliding windown for length s1L
         int left = 0, right = 0;
-        while (right < s1L) {
-            char s1C = s1.charAt(right);
-            char s2C = s2.charAt(right);
-            s1Hash[s1C - 'a'] += 1;
-            s2Hash[s2C - 'a'] += 1;
+
+        // Sliding window
+        while (right < pLen) {
+            char sChar = s.charAt(right);
+            char pChar = p.charAt(right);
+            sHash[sChar - 'a'] += 1;
+            pHash[pChar - 'a'] += 1;
+
             right++;
         }
 
-        if (Arrays.equals(s1Hash, s2Hash)) {
-            return true;
+        if (Arrays.equals(sHash, pHash)) {
+            res.add(left);
         }
 
-//        System.out.println("S1: "+Arrays.toString(s1Hash));
-//        System.out.println("S2: "+Arrays.toString(s2Hash));
-//        System.out.println();
+        for (int x : pHash){
+            System.out.print(x + " ");
+        }
+        System.out.println();
 
+        for (int x : sHash){
+            System.out.print(x + " ");
+        }
+        System.out.println();
 
-        while (right < s2L) {
-            char leftChar = s2.charAt(left);
-            char rightChar = s2.charAt(right);
+        while (right < sLen) {
+            char lChar = s.charAt(left);
+            char rChar = s.charAt(right);
 
-//            System.out.println("S2 pre: " +" "+ leftChar +" "+rightChar + " " +Arrays.toString(s2Hash));
-            s2Hash[leftChar - 'a'] -= 1;
-            s2Hash[rightChar - 'a'] += 1;
+            sHash[lChar - 'a'] -= 1;
+            sHash[rChar - 'a'] += 1;
 
-            if (Arrays.equals(s1Hash, s2Hash)) {
-                return true;
+            for (int x : sHash){
+                System.out.print(x + " ");
             }
+            System.out.println();
 
-//            System.out.println("S2 post: "+Arrays.toString(s2Hash));
-//            System.out.println();
-
-            left++;
             right++;
+            left++;
+
+            if (Arrays.equals(sHash, pHash)){
+                res.add(left);
+            }
         }
 
-        return false;
 
+        return res;
     }
 }
