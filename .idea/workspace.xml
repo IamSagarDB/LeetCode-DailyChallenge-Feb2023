@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e265bfa-9f00-4545-88be-3ad8a229512a" name="Changes" comment="Updated MD">
-      <change afterPath="$PROJECT_DIR$/src/P_438_Find_All_Anagrams_in_a_String.java" afterDir="false" />
+    <list default="true" id="0e265bfa-9f00-4545-88be-3ad8a229512a" name="Changes" comment="updated README.md">
+      <change afterPath="$PROJECT_DIR$/src/P_1470_Shuffle_the_Array.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,9 +42,16 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.P_438_Find_All_Anagrams_in_a_String">
+  <component name="RunManager" selected="Application.P_1470_Shuffle_the_Array">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="LeetCode-DailyChallenge-Feb2023" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P_1470_Shuffle_the_Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="P_1470_Shuffle_the_Array" />
       <module name="LeetCode-DailyChallenge-Feb2023" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,8 +80,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.P_438_Find_All_Anagrams_in_a_String" />
+        <item itemvalue="Application.P_1470_Shuffle_the_Array" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.P_438_Find_All_Anagrams_in_a_String" />
         <item itemvalue="Application.P_6_Zigzag_Conversion" />
         <item itemvalue="Application.P_953_Verifying_an_Alien_Dictionary" />
       </list>
@@ -153,7 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675482564801</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="P_438_Find_All_Anagrams_in_a_String">
+      <created>1675579155605</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675579155605</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated README.md">
+      <created>1675579229051</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675579229051</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +194,8 @@
     <MESSAGE value="P_6_Zigzag_Conversion" />
     <MESSAGE value="P_567_Permutation_in_String" />
     <MESSAGE value="Updated MD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated MD" />
+    <MESSAGE value="P_438_Find_All_Anagrams_in_a_String" />
+    <MESSAGE value="updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
   </component>
 </project>

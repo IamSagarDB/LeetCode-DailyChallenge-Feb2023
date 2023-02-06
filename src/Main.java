@@ -5,70 +5,20 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String s = "cbaebabacd";
-        String p = "abc";
-        List<Integer> res = findAnagrams(s, p);
-        for (Integer n : res){
-            System.out.print(n + " ");
-        }
-    }
+        int[] nums = {2,5,1,3,4,7};
+        int n = 3;
 
-    public static List<Integer> findAnagrams(String s, String p) {
-        List<Integer> res = new ArrayList<Integer>();
-        int[] sHash = new int[26];
-        int[] pHash = new int[26];
-        int sLen = s.length();
-        int pLen = p.length();
-
-        if (pLen > sLen) return res;
-
-        int left = 0, right = 0;
-
-        // Sliding window
-        while (right < pLen) {
-            char sChar = s.charAt(right);
-            char pChar = p.charAt(right);
-            sHash[sChar - 'a'] += 1;
-            pHash[pChar - 'a'] += 1;
-
-            right++;
+        for(int i = n ; i < 2*n ; i++){
+            int secNum = nums[i] << 10;
+            nums[i-n] = secNum | nums[i-n];
         }
 
-        if (Arrays.equals(sHash, pHash)) {
-            res.add(left);
+        for (int i = n -1 ; i >=0 ; i--){
+            int secNum = nums[i] >> 10;
+            int firstNum = nums[i] & 1023;
+
+            nums[2*i+1] = secNum;
+            nums[2*i] = firstNum;
         }
-
-        for (int x : pHash){
-            System.out.print(x + " ");
-        }
-        System.out.println();
-
-        for (int x : sHash){
-            System.out.print(x + " ");
-        }
-        System.out.println();
-
-        while (right < sLen) {
-            char lChar = s.charAt(left);
-            char rChar = s.charAt(right);
-
-            sHash[lChar - 'a'] -= 1;
-            sHash[rChar - 'a'] += 1;
-
-            for (int x : sHash){
-                System.out.print(x + " ");
-            }
-            System.out.println();
-
-            right++;
-            left++;
-
-            if (Arrays.equals(sHash, pHash)){
-                res.add(left);
-            }
-        }
-
-
-        return res;
     }
 }
