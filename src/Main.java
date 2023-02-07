@@ -1,24 +1,17 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {2,5,1,3,4,7};
-        int n = 3;
-
-        for(int i = n ; i < 2*n ; i++){
-            int secNum = nums[i] << 10;
-            nums[i-n] = secNum | nums[i-n];
+        int[] fruits = {1,2,1};
+        int[] res = sortArrayByParity(fruits);
+        for (int n : res) {
+            System.out.print(n + " ");
         }
+    }
+    public static int[] sortArrayByParity(int[] fruits) {
 
-        for (int i = n -1 ; i >=0 ; i--){
-            int secNum = nums[i] >> 10;
-            int firstNum = nums[i] & 1023;
-
-            nums[2*i+1] = secNum;
-            nums[2*i] = firstNum;
-        }
+        return fruits;
     }
 }
